@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>AngularJS Object Expressions Example</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="ctrl">
+    <p>This is an AngularJs Object Array Example</p>
+    <p>In Math he got {{array[0]}}</p>
+    <p>In Science he got {{array[1]}}</p>
+    <p>In Bio he got {{array[2]}}</p>
+    <p>In DM he got {{array[3]}}</p>
+    
+    <script>
+         var app =angular.module('myApp' ,[]);
+        app.controller('ctrl',function($scope){
+        $scope.array=['50','40','60','80'];
+        });
+    </script>
+
+</body>
+
+</html>
